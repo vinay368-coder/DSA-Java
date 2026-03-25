@@ -19,10 +19,13 @@ public class LinearSearch{
 	}
 	
 	static int search(int[] num,int key) {
+		int steps=0;
 		for(int i=0; i<num.length;i++) {
+			steps++;
 			if(num[i] == key)
 				return (i+1);
 		}
+		System.out.println("Number of Steps:"+steps);
 		return -1;
 	}
 
