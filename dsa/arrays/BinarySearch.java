@@ -6,7 +6,7 @@ public class BinarySearch {
 		int[] num = {10,20,30,40,5,3,33,54,23};
 		int key = 3;
 		BubbleSort(num);
-		int pos = BinarySearch(num,key,0,num.length-1);
+		int pos = Binarysearch(num,key,0,num.length-1);
 		System.out.println("Number of steps for Searching elem in Binary search:"+steps);
 		if(pos!=-1) {
 			System.out.println(key+" Found at position "+pos);
@@ -29,7 +29,7 @@ public class BinarySearch {
 		}
 	}
 	
-	static int BinarySearch(int[] a,int key,int low,int high) {
+	static int Binarysearch(int[] a,int key,int low,int high) {
 		steps++;
 		if(low>high)
 			return -1;
@@ -39,10 +39,10 @@ public class BinarySearch {
 			return mid;
 		
 		else if (a[mid]>key)
-			return BinarySearch(a,key,low,mid-1);
+			return Binarysearch(a,key,low,mid-1);
 		
 		else if (a[mid]<key)
-			return BinarySearch(a,key,mid+1,high);
+			return Binarysearch(a,key,mid+1,high);
 		else
 			return -1;
 		
