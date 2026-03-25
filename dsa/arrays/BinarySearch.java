@@ -1,12 +1,13 @@
 package dsa.arrays;
 
 public class BinarySearch {
-
+	static int steps=0;
 	public static void main(String[] args) {
-		int[] num = {10,5,25,30,40,3,2};
-		int key = 40;
+		int[] num = {10,20,30,40,5,3,33,54,23};
+		int key = 3;
 		BubbleSort(num);
 		int pos = BinarySearch(num,key,0,num.length-1);
+		System.out.println("Number of steps for Searching elem in Binary search:"+steps);
 		if(pos!=-1) {
 			System.out.println(key+" Found at position "+pos);
 		}
@@ -29,7 +30,9 @@ public class BinarySearch {
 	}
 	
 	static int BinarySearch(int[] a,int key,int low,int high) {
-		
+		steps++;
+		if(low>high)
+			return -1;
 		int mid=(low+high)/2;
 		
 		if(a[mid]==key) 
