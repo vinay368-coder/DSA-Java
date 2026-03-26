@@ -22,23 +22,30 @@ public class QuickSort {
 			
 			while(i<=high && pivot>=a[i])
 				i++;
+			
 			while(j>=low && pivot<a[j])
 				j--;
+			
 			if(i>=j)
 				break;
+			
 			temp = a[i];
 			a[i] = a[j];
 			a[j] = temp;
+			
 		}
+		
 		temp = a[low];
 		a[low] = a[j];
 		a[j] = temp;
 		return j;
+		
 	}
 	
 	
 	
 	public static void main(String[] args) {
+		
 		Scanner sc = new Scanner(System.in);
 		
 		int n;
