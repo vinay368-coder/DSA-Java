@@ -55,7 +55,7 @@ public class MergeSort {
 			if(b[i]<=c[j])
 				a[k++] = b[i++];
 			else
-				a[k++] = c[j++];
+				a[k++] = c[j++]; 
 		}
 		
 		while(i<=mid)
