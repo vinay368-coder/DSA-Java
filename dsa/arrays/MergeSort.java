@@ -45,7 +45,7 @@ public class MergeSort {
 		
 		for(int j = mid+1;j<=high;j++)
 			c[j] = a[j];
-		
+		 
 		int i,j,k;
 		i=low; // for b
 		j=mid+1; // for c
