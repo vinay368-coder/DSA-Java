@@ -19,7 +19,7 @@ public class MainDoubleLinkedList {
 			System.out.println("6.Delete an element at end of list");
 			System.out.println("7.Display all elements of list");
 			System.out.println("8.Exit");
-			System.out.println("Enter you choice");
+			System.out.println("Enter your choice");
 			System.out.println();
 			choice = sc.nextInt();
 			
