@@ -37,7 +37,9 @@ public class MainDoubleLinkedList {
 				list.insert(elem, pos);
 				break;
 			case 3:
-				list.delete(1);
+				System.out.println("Enter an element to insert at end");
+				elem = sc.nextInt();
+				list.insertend(elem);
 				break;
 			case 4:
 				list.delete(1);
